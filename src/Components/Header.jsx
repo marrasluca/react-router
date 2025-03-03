@@ -15,12 +15,12 @@ const Header = () => {
                                 <li>
                                     <NavLink to={'/about-us'}>
                                                 Chi Siamo
-                                    </NavLink>/
+                                    </NavLink>
                                 </li>
                                 <li>
                                     <NavLink to={'/posts-list'}>
                                         Posts Links
-                                    </NavLink>/
+                                    </NavLink>
                                 </li>
                             </ul>
                         </nav>

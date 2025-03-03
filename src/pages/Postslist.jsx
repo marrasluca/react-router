@@ -1,4 +1,4 @@
-const Postslist = () => {
+const PostsList = () => {
     return (
         <h1>Lista</h1>
     )
@@ -6,4 +6,4 @@ const Postslist = () => {
     
 }
 
-export default Postslist
+export default PostsList

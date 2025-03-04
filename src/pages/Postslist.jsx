@@ -1,8 +1,8 @@
-const PostsList = () => {
-    return (
-        <h1>Lista</h1>
-    )
+import axios from "axios";
+import { useEffect, useState } from "react";
 
+
+const PostsList = () => {
     
 }
 

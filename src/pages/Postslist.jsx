@@ -27,7 +27,7 @@ const PostsList = () => {
 
                         const { id, title, content, image, tags } = elem
                         return (
-                            <div className="col-3">
+                            <div className="col-3"   key={id}>
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">{title}</h4>

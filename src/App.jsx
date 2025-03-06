@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import PostsList from './pages/postslist';
+import PostsList from './pages/Postslist';
 import AboutUs from './pages/aboutUs';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage'
 import DefaultLayout from './layouts/DefaultLayout';
+import SinglePosts from './pages/SinglePosts';
 
 function App() {
  
@@ -12,10 +13,11 @@ function App() {
     <>
     <BrowserRouter>
         <Routes>
-        <Route element={<DefaultLayout />}>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/about-us' element={<AboutUs />} />
-          <Route path='/posts-list' element={<PostsList />} />
+        <Route Component={DefaultLayout}>
+          <Route path='/'Component={HomePage} />
+          <Route path='/about-us' Component={AboutUs} />
+          <Route path='/posts-list' Component={PostsList} />
+          <Route path='/posts-list/:id' Component={SinglePosts} />
           </Route>
         </Routes>
     </BrowserRouter>
